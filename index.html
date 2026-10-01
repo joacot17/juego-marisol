@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Shofar de Shlomo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>El Shofar de Shlomo</h1>
+  <div class="hud">
+    <div>Ofrendas: <b id="score">0</b> <small>/ 1000</small></div>
+    <div class="bar"><i id="bar"></i></div>
+  </div>
+  <button id="rulesBtn" class="ghost">Reglamento</button>
+</header>
+<main>
+  <div id="board"><svg id="svg" viewBox="0 0 800 520" role="img" aria-label="Tablero en forma de shofar"></svg></div>
+  <aside class="panel">
+    <div id="die">⚃</div>
+    <button id="roll" class="go">Tirar dado</button>
+    <p id="status">Tirá el dado para avanzar por el shofar.</p>
+    <p class="legend"><span class="dot q"></span>Carta de pregunta<br><span class="dot g"></span>Bendición<br><span class="dot b"></span>Peligro</p>
+  </aside>
+</main>
+<div id="info" class="overlay hidden"><div class="card" id="infoCard"></div></div>
+<div id="modal" class="overlay hidden"><div class="card" id="card"></div></div>
+<script src="game.js"></script>
+</body>
+</html>
